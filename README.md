@@ -1,23 +1,38 @@
-#  clay - Provide more flexible data visualization solutions
+# npm-downloads
+npm包下载量比较。
 
-[![hompage](https://github.com/yelloxing/clay/blob/master/data/SVG/github.svg)](https://github.com/yelloxing)
-[![clay Code](https://github.com/yelloxing/clay/blob/master/data/SVG/clay.svg)](https://github.com/yelloxing/clay)
-[![clay license](https://github.com/yelloxing/clay/blob/master/data/SVG/license.svg)](https://github.com/yelloxing/clay/blob/master/LICENSE)
+<img align="center" src="https://github.com/yelloxing/npm-downloads/blob/master/src/asset/npm.png">
 
-我们的目标是：提供更友好的数据可视化（2D和3D）解决方案。
+如何使用？
+--------------------------------------
+我们以@yelloxing/core.js为例，下面是项目的最终效果，点击它你就会进入具体的下载统计页面。
 
-<img align="right" height="100" src="https://github.com/yelloxing/clay/blob/master/doc/images/clay.png">
+<a href="https://yelloxing.github.io/npm-downloads?interval=7&packages=@yelloxing/core.js"><img src="https://img.shields.io/npm/dm/@yelloxing/core.js.svg" alt="Downloads"></a>
 
-****
-### 作者:心叶
-### 邮箱:yelloxing@gmail.com
-****
+```html
+<a href="https://yelloxing.github.io/npm-downloads?interval=7&packages=@yelloxing/core.js">
+    <img src="https://img.shields.io/npm/dm/@yelloxing/core.js.svg" alt="Downloads">
+</a>
+```
 
-### 相关链接
-------
-*	【接口文档和用例】https://yelloxing.github.io/clay/doc/index.html
+复制上面的代码到你项目的README.md或别的页面，然后把@yelloxing/core.js改成你自己的npm包的名字就可以了。
 
-### 免责声明
-------
-*   项目中部分数据（如图片等）来自互联网，如果侵犯到对应权益者请联系我们，方便我们及时删除！
-*   本项目保留贡献者全部权利，发生的任何纠纷，本项目作者和维护人概不负责，如有侵权，请及时和我们取得联系。
+如何启动本地编辑？
+--------------------------------------
+首先，你需要确保本地安装了node.js，然后，执行下面命令安装项目依赖：
+
+```bash
+npm install
+```
+
+接着，启动下面命令会自动打开页面，修改内容页面也自动刷新：
+
+```bash
+npm run dev
+```
+
+如果你想发布开发的代码，执行下面命令进行打包：
+
+```bash
+npm run build
+```
